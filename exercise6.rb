@@ -30,3 +30,8 @@ puts grocery_list[1]
 grocery_list.sort!
 
 list_groceries(grocery_list)
+
+#Delete salmon from list
+grocery_list.delete("salmon")
+
+list_groceries(grocery_list)
