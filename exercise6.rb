@@ -11,3 +11,5 @@ list_groceries(grocery_list)
 grocery_list.push("rice")
 
 list_groceries(grocery_list)
+
+puts grocery_list.count
