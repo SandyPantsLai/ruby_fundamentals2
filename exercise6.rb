@@ -25,3 +25,8 @@ end
 #Display second item of list
 
 puts grocery_list[1]
+
+#Alphabetize list
+grocery_list.sort!
+
+list_groceries(grocery_list)
