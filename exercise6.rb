@@ -12,4 +12,12 @@ grocery_list.push("rice")
 
 list_groceries(grocery_list)
 
+#Output number of list items
 puts grocery_list.count
+
+#Check if bananas are on the list
+if grocery_list.include?("bananas")
+	puts "You need to pick up bananas."
+else
+	puts "You don't need to pick up bananas today."
+end
