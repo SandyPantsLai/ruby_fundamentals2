@@ -25,3 +25,8 @@ students.each do |key, value|
 end
 
 enrollment(students)
+
+#Delete cohort 2.
+students.delete(:cohort2)
+
+enrollment(students)
