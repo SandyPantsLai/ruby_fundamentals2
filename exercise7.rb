@@ -15,3 +15,6 @@ enrollment(students)
 
 #Add Cohort 4
 students[:cohort4] = 43
+
+#Show cohort names
+puts students.keys
