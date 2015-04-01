@@ -12,3 +12,6 @@ def enrollment(list)
 end
 
 enrollment(students)
+
+#Add Cohort 4
+students[:cohort4] = 43
