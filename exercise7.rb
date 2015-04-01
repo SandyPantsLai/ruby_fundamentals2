@@ -7,7 +7,7 @@ students = {
 #Display how many students are in each cohort
 def enrollment(list)
 	list.each do |key, value|
-		puts key.to_s + ": " + value.to_s + " students"
+		puts "#{key}: #{value} students"
 	end
 end
 
@@ -18,3 +18,10 @@ students[:cohort4] = 43
 
 #Show cohort names
 puts students.keys
+
+#Increase cohort numbers by 5%
+students.each do |key, value|
+  students[key] = (value * 1.05).to_i #Can only have a whole number of students
+end
+
+enrollment(students)
