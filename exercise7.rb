@@ -9,6 +9,7 @@ def enrollment(list)
 	list.each do |key, value|
 		puts "#{key}: #{value} students"
 	end
+	puts "------------------------"
 end
 
 enrollment(students)
@@ -18,6 +19,7 @@ students[:cohort4] = 43
 
 #Show cohort names
 puts students.keys
+puts "------------------------"
 
 #Increase cohort numbers by 5%
 students.each do |key, value|
@@ -30,3 +32,12 @@ enrollment(students)
 students.delete(:cohort2)
 
 enrollment(students)
+
+#Calculate total of all students in all cohorts
+total = 0
+
+students.each do |key, value|
+	total += value
+end
+
+puts total
