@@ -1,3 +1,13 @@
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
-grocery_list.each {|item| puts "* #{item}"}
+#Method to list groceries with *
+def list_groceries(list)
+	list.each {|item| puts "* #{item}"}
+end
+
+list_groceries(grocery_list)
+
+#Add rice to list
+grocery_list.push("rice")
+
+list_groceries(grocery_list)
